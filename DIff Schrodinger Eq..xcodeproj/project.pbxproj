@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		092A607427D2B9F70090CD22 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A607327D2B9F70090CD22 /* Tests_iOS.swift */; };
+		092A607627D2B9F70090CD22 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A607527D2B9F70090CD22 /* Tests_iOSLaunchTests.swift */; };
+		092A608027D2B9F70090CD22 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A607F27D2B9F70090CD22 /* Tests_macOS.swift */; };
+		092A608227D2B9F70090CD22 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A608127D2B9F70090CD22 /* Tests_macOSLaunchTests.swift */; };
+		092A608327D2B9F70090CD22 /* DIff_Schrodinger_Eq_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A605B27D2B9F20090CD22 /* DIff_Schrodinger_Eq_App.swift */; };
+		092A608427D2B9F70090CD22 /* DIff_Schrodinger_Eq_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A605B27D2B9F20090CD22 /* DIff_Schrodinger_Eq_App.swift */; };
+		092A608527D2B9F70090CD22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A605C27D2B9F20090CD22 /* ContentView.swift */; };
+		092A608627D2B9F70090CD22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A605C27D2B9F20090CD22 /* ContentView.swift */; };
+		092A608727D2B9F70090CD22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 092A605D27D2B9F70090CD22 /* Assets.xcassets */; };
+		092A608827D2B9F70090CD22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 092A605D27D2B9F70090CD22 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		092A607027D2B9F70090CD22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 092A605627D2B9F20090CD22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 092A606127D2B9F70090CD22;
+			remoteInfo = "DIff Schrodinger Eq. (iOS)";
+		};
+		092A607C27D2B9F70090CD22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 092A605627D2B9F20090CD22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 092A606727D2B9F70090CD22;
+			remoteInfo = "DIff Schrodinger Eq. (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		092A605B27D2B9F20090CD22 /* DIff_Schrodinger_Eq_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIff_Schrodinger_Eq_App.swift; sourceTree = "<group>"; };
+		092A605C27D2B9F20090CD22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		092A605D27D2B9F70090CD22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		092A606227D2B9F70090CD22 /* DIff Schrodinger Eq..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DIff Schrodinger Eq..app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		092A606827D2B9F70090CD22 /* DIff Schrodinger Eq..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DIff Schrodinger Eq..app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		092A606A27D2B9F70090CD22 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		092A606F27D2B9F70090CD22 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		092A607327D2B9F70090CD22 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		092A607527D2B9F70090CD22 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		092A607B27D2B9F70090CD22 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		092A607F27D2B9F70090CD22 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		092A608127D2B9F70090CD22 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		092A605F27D2B9F70090CD22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		092A606527D2B9F70090CD22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		092A606C27D2B9F70090CD22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		092A607827D2B9F70090CD22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		092A605527D2B9F20090CD22 = {
+			isa = PBXGroup;
+			children = (
+				092A605A27D2B9F20090CD22 /* Shared */,
+				092A606927D2B9F70090CD22 /* macOS */,
+				092A607227D2B9F70090CD22 /* Tests iOS */,
+				092A607E27D2B9F70090CD22 /* Tests macOS */,
+				092A606327D2B9F70090CD22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		092A605A27D2B9F20090CD22 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				092A605B27D2B9F20090CD22 /* DIff_Schrodinger_Eq_App.swift */,
+				092A605C27D2B9F20090CD22 /* ContentView.swift */,
+				092A605D27D2B9F70090CD22 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		092A606327D2B9F70090CD22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				092A606227D2B9F70090CD22 /* DIff Schrodinger Eq..app */,
+				092A606827D2B9F70090CD22 /* DIff Schrodinger Eq..app */,
+				092A606F27D2B9F70090CD22 /* Tests iOS.xctest */,
+				092A607B27D2B9F70090CD22 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		092A606927D2B9F70090CD22 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				092A606A27D2B9F70090CD22 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		092A607227D2B9F70090CD22 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				092A607327D2B9F70090CD22 /* Tests_iOS.swift */,
+				092A607527D2B9F70090CD22 /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		092A607E27D2B9F70090CD22 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				092A607F27D2B9F70090CD22 /* Tests_macOS.swift */,
+				092A608127D2B9F70090CD22 /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		092A606127D2B9F70090CD22 /* DIff Schrodinger Eq. (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 092A608B27D2B9F70090CD22 /* Build configuration list for PBXNativeTarget "DIff Schrodinger Eq. (iOS)" */;
+			buildPhases = (
+				092A605E27D2B9F70090CD22 /* Sources */,
+				092A605F27D2B9F70090CD22 /* Frameworks */,
+				092A606027D2B9F70090CD22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DIff Schrodinger Eq. (iOS)";
+			productName = "DIff Schrodinger Eq. (iOS)";
+			productReference = 092A606227D2B9F70090CD22 /* DIff Schrodinger Eq..app */;
+			productType = "com.apple.product-type.application";
+		};
+		092A606727D2B9F70090CD22 /* DIff Schrodinger Eq. (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 092A608E27D2B9F70090CD22 /* Build configuration list for PBXNativeTarget "DIff Schrodinger Eq. (macOS)" */;
+			buildPhases = (
+				092A606427D2B9F70090CD22 /* Sources */,
+				092A606527D2B9F70090CD22 /* Frameworks */,
+				092A606627D2B9F70090CD22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DIff Schrodinger Eq. (macOS)";
+			productName = "DIff Schrodinger Eq. (macOS)";
+			productReference = 092A606827D2B9F70090CD22 /* DIff Schrodinger Eq..app */;
+			productType = "com.apple.product-type.application";
+		};
+		092A606E27D2B9F70090CD22 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 092A609127D2B9F70090CD22 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				092A606B27D2B9F70090CD22 /* Sources */,
+				092A606C27D2B9F70090CD22 /* Frameworks */,
+				092A606D27D2B9F70090CD22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				092A607127D2B9F70090CD22 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 092A606F27D2B9F70090CD22 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		092A607A27D2B9F70090CD22 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 092A609427D2B9F70090CD22 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				092A607727D2B9F70090CD22 /* Sources */,
+				092A607827D2B9F70090CD22 /* Frameworks */,
+				092A607927D2B9F70090CD22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				092A607D27D2B9F70090CD22 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 092A607B27D2B9F70090CD22 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		092A605627D2B9F20090CD22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					092A606127D2B9F70090CD22 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					092A606727D2B9F70090CD22 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					092A606E27D2B9F70090CD22 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 092A606127D2B9F70090CD22;
+					};
+					092A607A27D2B9F70090CD22 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 092A606727D2B9F70090CD22;
+					};
+				};
+			};
+			buildConfigurationList = 092A605927D2B9F20090CD22 /* Build configuration list for PBXProject "DIff Schrodinger Eq." */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 092A605527D2B9F20090CD22;
+			productRefGroup = 092A606327D2B9F70090CD22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				092A606127D2B9F70090CD22 /* DIff Schrodinger Eq. (iOS) */,
+				092A606727D2B9F70090CD22 /* DIff Schrodinger Eq. (macOS) */,
+				092A606E27D2B9F70090CD22 /* Tests iOS */,
+				092A607A27D2B9F70090CD22 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		092A606027D2B9F70090CD22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				092A608727D2B9F70090CD22 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		092A606627D2B9F70090CD22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				092A608827D2B9F70090CD22 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		092A606D27D2B9F70090CD22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		092A607927D2B9F70090CD22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		092A605E27D2B9F70090CD22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				092A608527D2B9F70090CD22 /* ContentView.swift in Sources */,
+				092A608327D2B9F70090CD22 /* DIff_Schrodinger_Eq_App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		092A606427D2B9F70090CD22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				092A608627D2B9F70090CD22 /* ContentView.swift in Sources */,
+				092A608427D2B9F70090CD22 /* DIff_Schrodinger_Eq_App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		092A606B27D2B9F70090CD22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				092A607627D2B9F70090CD22 /* Tests_iOSLaunchTests.swift in Sources */,
+				092A607427D2B9F70090CD22 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		092A607727D2B9F70090CD22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				092A608227D2B9F70090CD22 /* Tests_macOSLaunchTests.swift in Sources */,
+				092A608027D2B9F70090CD22 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		092A607127D2B9F70090CD22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 092A606127D2B9F70090CD22 /* DIff Schrodinger Eq. (iOS) */;
+			targetProxy = 092A607027D2B9F70090CD22 /* PBXContainerItemProxy */;
+		};
+		092A607D27D2B9F70090CD22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 092A606727D2B9F70090CD22 /* DIff Schrodinger Eq. (macOS) */;
+			targetProxy = 092A607C27D2B9F70090CD22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		092A608927D2B9F70090CD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		092A608A27D2B9F70090CD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		092A608C27D2B9F70090CD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "IIT.DIff-Schrodinger-Eq-";
+				PRODUCT_NAME = "DIff Schrodinger Eq.";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		092A608D27D2B9F70090CD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "IIT.DIff-Schrodinger-Eq-";
+				PRODUCT_NAME = "DIff Schrodinger Eq.";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		092A608F27D2B9F70090CD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "IIT.DIff-Schrodinger-Eq-";
+				PRODUCT_NAME = "DIff Schrodinger Eq.";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		092A609027D2B9F70090CD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "IIT.DIff-Schrodinger-Eq-";
+				PRODUCT_NAME = "DIff Schrodinger Eq.";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		092A609227D2B9F70090CD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "IIT.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DIff Schrodinger Eq. (iOS)";
+			};
+			name = Debug;
+		};
+		092A609327D2B9F70090CD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "IIT.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DIff Schrodinger Eq. (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		092A609527D2B9F70090CD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "IIT.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "DIff Schrodinger Eq. (macOS)";
+			};
+			name = Debug;
+		};
+		092A609627D2B9F70090CD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "IIT.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "DIff Schrodinger Eq. (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		092A605927D2B9F20090CD22 /* Build configuration list for PBXProject "DIff Schrodinger Eq." */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				092A608927D2B9F70090CD22 /* Debug */,
+				092A608A27D2B9F70090CD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		092A608B27D2B9F70090CD22 /* Build configuration list for PBXNativeTarget "DIff Schrodinger Eq. (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				092A608C27D2B9F70090CD22 /* Debug */,
+				092A608D27D2B9F70090CD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		092A608E27D2B9F70090CD22 /* Build configuration list for PBXNativeTarget "DIff Schrodinger Eq. (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				092A608F27D2B9F70090CD22 /* Debug */,
+				092A609027D2B9F70090CD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		092A609127D2B9F70090CD22 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				092A609227D2B9F70090CD22 /* Debug */,
+				092A609327D2B9F70090CD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		092A609427D2B9F70090CD22 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				092A609527D2B9F70090CD22 /* Debug */,
+				092A609627D2B9F70090CD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 092A605627D2B9F20090CD22 /* Project object */;
+}

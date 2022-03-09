@@ -4,9 +4,11 @@
 //
 //  Created by Alaina Thompson on 3/4/22.
 //
-
+import Foundation
 import SwiftUI
 import Darwin
+import CorePlot
+
 
 
 class DiffEq: NSObject,ObservableObject {
@@ -19,8 +21,7 @@ class DiffEq: NSObject,ObservableObject {
     
     let hbarsquareoverm = 7.62 /* units of eV A^2*/
     
-    
-    
+ 
     
     
     
@@ -102,6 +103,19 @@ class DiffEq: NSObject,ObservableObject {
         var psi_double_prime = f_num*psi_i
         
         
+              
+
+
+                
+                  
+        
+        
+     
+        
+        
+        
+      
+        
         
         x_array.append(n)
         psi_array.append(psi_i)
@@ -109,6 +123,11 @@ class DiffEq: NSObject,ObservableObject {
         
         var i = 0
    
+        
+        
+       
+        
+        
         while (abs( L - n ) > 1e-8) {
             
             
@@ -126,16 +145,16 @@ class DiffEq: NSObject,ObservableObject {
 
             
 
-    
+          
         }
-  
+    
         return psi_i
         
     }
 
 
-
    
+    
     
     
     

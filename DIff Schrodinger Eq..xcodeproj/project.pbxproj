@@ -43,10 +43,6 @@
 		092A60B927D2BEC50090CD22 /* ChnagingPlotParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A60B727D2BEC50090CD22 /* ChnagingPlotParameters.swift */; };
 		092A60BA27D2BEC50090CD22 /* ChnagingPlotParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A60B727D2BEC50090CD22 /* ChnagingPlotParameters.swift */; };
 		092A60BB27D2BEC50090CD22 /* ChnagingPlotParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A60B727D2BEC50090CD22 /* ChnagingPlotParameters.swift */; };
-		092A60BD27D2BF4C0090CD22 /* CalculatePlotData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A60BC27D2BF4C0090CD22 /* CalculatePlotData.swift */; };
-		092A60BE27D2BF4C0090CD22 /* CalculatePlotData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A60BC27D2BF4C0090CD22 /* CalculatePlotData.swift */; };
-		092A60BF27D2BF4C0090CD22 /* CalculatePlotData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A60BC27D2BF4C0090CD22 /* CalculatePlotData.swift */; };
-		092A60C027D2BF4C0090CD22 /* CalculatePlotData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A60BC27D2BF4C0090CD22 /* CalculatePlotData.swift */; };
 		092A60C227D2BFF20090CD22 /* TextExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A60C127D2BFF20090CD22 /* TextExportDocument.swift */; };
 		092A60C327D2BFF20090CD22 /* TextExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A60C127D2BFF20090CD22 /* TextExportDocument.swift */; };
 		092A60C427D2BFF20090CD22 /* TextExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A60C127D2BFF20090CD22 /* TextExportDocument.swift */; };
@@ -90,7 +86,6 @@
 		092A60AE27D2BE500090CD22 /* DIff-Schrodinger-Eq---macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DIff-Schrodinger-Eq---macOS--Info.plist"; sourceTree = "<group>"; };
 		092A60B227D2BE9A0090CD22 /* CorePlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorePlot.swift; sourceTree = "<group>"; };
 		092A60B727D2BEC50090CD22 /* ChnagingPlotParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChnagingPlotParameters.swift; sourceTree = "<group>"; };
-		092A60BC27D2BF4C0090CD22 /* CalculatePlotData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatePlotData.swift; sourceTree = "<group>"; };
 		092A60C127D2BFF20090CD22 /* TextExportDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExportDocument.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,7 +146,6 @@
 				092A60A627D2BDF40090CD22 /* PlotDataClass.swift */,
 				092A60C127D2BFF20090CD22 /* TextExportDocument.swift */,
 				092A60B727D2BEC50090CD22 /* ChnagingPlotParameters.swift */,
-				092A60BC27D2BF4C0090CD22 /* CalculatePlotData.swift */,
 				092A609C27D2BA140090CD22 /* Potentials.swift */,
 				092A60B227D2BE9A0090CD22 /* CorePlot.swift */,
 				092A605D27D2B9F70090CD22 /* Assets.xcassets */,
@@ -371,7 +365,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				092A608527D2B9F70090CD22 /* ContentView.swift in Sources */,
-				092A60BD27D2BF4C0090CD22 /* CalculatePlotData.swift in Sources */,
 				092A60B827D2BEC50090CD22 /* ChnagingPlotParameters.swift in Sources */,
 				092A60A727D2BDF40090CD22 /* PlotDataClass.swift in Sources */,
 				092A609827D2BA080090CD22 /* Differential Equations.swift in Sources */,
@@ -388,7 +381,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				092A608627D2B9F70090CD22 /* ContentView.swift in Sources */,
-				092A60BE27D2BF4C0090CD22 /* CalculatePlotData.swift in Sources */,
 				092A60B927D2BEC50090CD22 /* ChnagingPlotParameters.swift in Sources */,
 				092A60A827D2BDF40090CD22 /* PlotDataClass.swift in Sources */,
 				092A609927D2BA080090CD22 /* Differential Equations.swift in Sources */,
@@ -405,7 +397,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				092A607627D2B9F70090CD22 /* Tests_iOSLaunchTests.swift in Sources */,
-				092A60BF27D2BF4C0090CD22 /* CalculatePlotData.swift in Sources */,
 				092A60BA27D2BEC50090CD22 /* ChnagingPlotParameters.swift in Sources */,
 				092A60A927D2BDF40090CD22 /* PlotDataClass.swift in Sources */,
 				092A609A27D2BA080090CD22 /* Differential Equations.swift in Sources */,
@@ -422,7 +413,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				092A608227D2B9F70090CD22 /* Tests_macOSLaunchTests.swift in Sources */,
-				092A60C027D2BF4C0090CD22 /* CalculatePlotData.swift in Sources */,
 				092A60BB27D2BEC50090CD22 /* ChnagingPlotParameters.swift in Sources */,
 				092A60AA27D2BDF40090CD22 /* PlotDataClass.swift in Sources */,
 				092A609B27D2BA080090CD22 /* Differential Equations.swift in Sources */,

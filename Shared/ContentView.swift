@@ -14,15 +14,27 @@ struct ContentView: View {
     @EnvironmentObject var plotDataModel :PlotDataClass
     @ObservedObject var myPotential = Potential()
     @ObservedObject var myDiff = DiffEq()
-    @State var xInput: String = "\(Double.pi/2.0)"
-    @State var cosOutput: String = "0.0"
-    @State var computerCos: String = "\(cos(Double.pi/2.0))"
-    @State var error: String = "0.0"
+    @State var L: String = "10.0"
     @State var isChecked:Bool = false
   
     
+    
+    
+    @State var potentialTypes = ["Square Well", "Linear Well"]
+    @State private var selectedPotential = "Square Well"
+
+    
+
+    
+    
+    
+    
 
     var body: some View {
+        
+    
+
+        
         
         VStack{
       
@@ -35,52 +47,30 @@ struct ContentView: View {
             
             Divider()
             
-            HStack{
-                
-                HStack(alignment: .center) {
-                    Text("x:")
-                        .font(.callout)
-                        .bold()
-                    TextField("xValue", text: $xInput)
-                        .padding()
-                }.padding()
-                
-                HStack(alignment: .center) {
-                    Text("cos(x):")
-                        .font(.callout)
-                        .bold()
-                    TextField("cos(x)", text: $cosOutput)
-                        .padding()
-                }.padding()
-                
-                Toggle(isOn: $isChecked) {
-                            Text("Display Error")
-                        }
-                .padding()
-                
-                
+            
+            Picker("Potential:", selection: $selectedPotential) {
+                ForEach(potentialTypes, id: \.self) {
+                    Text($0)
+                }
             }
+            
+            
+            
             
             HStack{
                 
                 HStack(alignment: .center) {
-                    Text("Expected:")
+                    Text("Box Length")
                         .font(.callout)
                         .bold()
-                    TextField("Expected:", text: $computerCos)
-                        .padding()
+                    TextField("length value", text: $L)
+                        .padding(.bottom, 5.0)
                 }.padding()
                 
-                HStack(alignment: .center) {
-                    Text("Error:")
-                        .font(.callout)
-                        .bold()
-                    TextField("Error", text: $error)
-                        .padding()
-                }.padding()
-            
                 
             }
+            
+          
             
             
             HStack{
@@ -94,6 +84,13 @@ struct ContentView: View {
                 .padding()
                 
             }
+            HStack{
+                Button("Clear", action: {self.clear()})
+                    .padding(.bottom, 5.0)
+                    
+            }
+            
+            
         }
         
     }
@@ -107,10 +104,9 @@ struct ContentView: View {
         
       
         
-        //pass the plotDataModel to the cosCalculator
         myPotential.plotDataModel = self.plotDataModel
         
-        myPotential.SetPotential(xMin: 0.0, xMax: 10.0, xStep: 0.01, PotentialType: "Square Well")
+        myPotential.getPotential(xMin: 0.0, xMax: 10.0, xStep: 0.01, PotentialType: "Square Well")
      
         
     }
@@ -120,16 +116,24 @@ struct ContentView: View {
        
         myDiff.PotentialData = myPotential
         
-      
-        myDiff.plotDataModel = self.plotDataModel
         myDiff.calculateRK4(E: 0.376, xMax: 10.0, xMin: 0.0, xStep: 0.01)
+       
+        myDiff.plotDataModel = self.plotDataModel
+       
        
         
         
     }
 
-   
-    
+    func clear(){
+            
+        myPotential.plotPotentialData.removeAll()
+        myDiff.x_array = []
+        myDiff.psi_array = []
+        myDiff.psi_prime_array = []
+            
+            
+        }
 }
 
 struct ContentView_Previews: PreviewProvider {

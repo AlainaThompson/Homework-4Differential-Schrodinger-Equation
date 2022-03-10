@@ -21,10 +21,9 @@ class DiffEq: NSObject,ObservableObject {
     
     let hbarsquareoverm = 7.62 /* units of eV A^2*/
     
- 
-    
-    
-    
+ //   var plotWavefunctionData :[plotDataType] =  []
+   // var plotFunctionalData :[plotDataType] = []
+  //  var dataPoint: plotDataType = [.X: 0.0, .Y: 0.0]
     
     // h = step size
     var h = 0.1
@@ -46,9 +45,12 @@ class DiffEq: NSObject,ObservableObject {
     var psiPoint = 0.0
     var psi_num = 0.0
     
-    var x_array = [Double]()
-    var psi_array = [Double]()
-    var psi_prime_array = [Double]()
+    @Published var x_array:[Double] = []
+ //   var x_array = [Double]()
+    @Published var psi_array:[Double] = []
+//    var psi_array = [Double]()
+    @Published var psi_prime_array:[Double] = []
+ //   var psi_prime_array = [Double]()
     @Published var psi_String = ""
     
     
@@ -105,10 +107,6 @@ class DiffEq: NSObject,ObservableObject {
         
               
 
-
-                
-                  
-        
         
      
         
@@ -123,9 +121,6 @@ class DiffEq: NSObject,ObservableObject {
         
         var i = 0
    
-        
-        
-       
         
         
         while (abs( L - n ) > 1e-8) {
@@ -147,19 +142,45 @@ class DiffEq: NSObject,ObservableObject {
 
           
         }
-    
+        makeWaveFunctionPlot()
         return psi_i
         
     }
 
 
    
+    //How to plot the wavefunction?
     
-    
-    
-    
-    
-    
+//This method causes fatal error 
+    func makeWaveFunctionPlot() {
+        plotDataModel!.zeroData()
+
+        plotDataModel!.calculatedText = "The WaveFunction is: \n"
+                plotDataModel!.calculatedText += "x and Psi \n"
+                
+              
+
+
+                
+                    //set the Plot Parameters
+                    plotDataModel!.changingPlotParameters.yMax = 18.0
+                    plotDataModel!.changingPlotParameters.yMin = -18.1
+                    plotDataModel!.changingPlotParameters.xMax = 15.0
+                    plotDataModel!.changingPlotParameters.xMin = -1.0
+                    plotDataModel!.changingPlotParameters.xLabel = "x"
+                    plotDataModel!.changingPlotParameters.yLabel = "Psi"
+                    plotDataModel!.changingPlotParameters.lineColor = .red()
+                    plotDataModel!.changingPlotParameters.title = "Psi vs x"
+                        
+        for i in 0..<x_array.count {
+        plotDataModel!.calculatedText += "\(x_array[i]), \t\(psi_array[i])\n"
+        
+                    let dataPoint: plotDataType = [.X: x_array[i], .Y: psi_array[i]]
+                    plotDataModel!.appendData(dataPoint: [dataPoint])
+                    
+                
+        }
+    }
     
     
     

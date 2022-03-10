@@ -18,7 +18,8 @@ class Potential: ObservableObject{
     
     var plotPotentialData :[plotDataType] =  []
     
-    @Published var selectedPotential = "Square Well"
+    // How to make slected potential change with the selection from user?
+    @Published var selectedPotential = ""
     
     func startPotential(xMin: Double, xMax: Double, xStep: Double) {
         var count = 0
@@ -41,7 +42,7 @@ class Potential: ObservableObject{
         plotPotentialData.append(dataPoint)
     }
     
-    func getPotential(xMin: Double, xMax: Double, xStep: Double, PotentialType: String) {
+    func getPotential(xMin: Double, xMax: Double, xStep: Double, selectedPotential: String) {
         var count = x.count
         var dataPoint: plotDataType = [.X: 0.0, .Y: 0.0]
         

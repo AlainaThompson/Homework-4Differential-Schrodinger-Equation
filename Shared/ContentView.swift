@@ -20,8 +20,8 @@ struct ContentView: View {
     
     
     
-    @State var potentialTypes = ["Square Well", "Linear Well"]
-    @State private var selectedPotential = "Square Well"
+    @State var potentialTypes = ["Square Well", "Linear Well", "Parabolic Well", "Square+Linear", "Square Barrier", "Triangle Barrier", "Coupled Parabolic Well", "Coupled Square Well + Field", "Harmonic Oscillator", "Kronig Penny", "Variable Kronig Penny", "KP2-a"]
+    @State var selectedPotential = "Square Well"
 
     
 
@@ -96,18 +96,21 @@ struct ContentView: View {
     }
     
     
+   
     
     
-    /// calculateCos_X
-    /// Function accepts the command to start the calculation from the GUI
     func calculatePotential(){
         
       
         
         myPotential.plotDataModel = self.plotDataModel
+        //selectedPotential is being determined only by what is put in line 108
+        myPotential.getPotential(xMin: 0.0, xMax: 10.0, xStep: 0.01, selectedPotential: "Square Well")
         
-        myPotential.getPotential(xMin: 0.0, xMax: 10.0, xStep: 0.01, PotentialType: "Square Well")
-     
+        
+        
+        
+        
         
     }
     
@@ -120,6 +123,7 @@ struct ContentView: View {
        
         myDiff.plotDataModel = self.plotDataModel
        
+        print(myDiff.psi_array)
        
         
         

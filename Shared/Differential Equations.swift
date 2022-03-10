@@ -151,7 +151,7 @@ class DiffEq: NSObject,ObservableObject {
    
     //How to plot the wavefunction?
     
-//This method causes fatal error 
+//This method causes fatal error
     func makeWaveFunctionPlot() {
         plotDataModel!.zeroData()
 
@@ -181,7 +181,7 @@ class DiffEq: NSObject,ObservableObject {
                 
         }
     }
-    
+    //Do the same thing for x vs Psi_prime to get functional 
     
     
     

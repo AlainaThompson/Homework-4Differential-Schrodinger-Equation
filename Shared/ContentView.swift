@@ -14,7 +14,7 @@ struct ContentView: View {
     @EnvironmentObject var plotDataModel :PlotDataClass
     @ObservedObject var myPotential = Potential()
     @ObservedObject var myDiff = DiffEq()
-    @State var L: String = "10.0"
+    @State var xMax: String = "10.0"
     @State var isChecked:Bool = false
   
     
@@ -51,10 +51,11 @@ struct ContentView: View {
             Picker("Potential:", selection: $selectedPotential) {
                 ForEach(potentialTypes, id: \.self) {
                     Text($0)
+                    
                 }
+            
             }
-            
-            
+           
             
             
             HStack{
@@ -63,7 +64,7 @@ struct ContentView: View {
                     Text("Box Length")
                         .font(.callout)
                         .bold()
-                    TextField("length value", text: $L)
+                    TextField("length value", text: $xMax)
                         .padding(.bottom, 5.0)
                 }.padding()
                 
@@ -74,7 +75,9 @@ struct ContentView: View {
             
             
             HStack{
-                Button("Calculate potential", action: {self.calculatePotential()} )
+                Button("Calculate potential", action: {
+                    
+                    self.calculatePotential()} )
                 .padding()
                 
             }
@@ -104,8 +107,8 @@ struct ContentView: View {
       
         
         myPotential.plotDataModel = self.plotDataModel
-        //selectedPotential is being determined only by what is put in line 108
-        myPotential.getPotential(xMin: 0.0, xMax: 10.0, xStep: 0.01, selectedPotential: "Square Well")
+        
+        myPotential.getPotential(xMin: 0.0, xMax: 10.0, xStep: 0.01, selectedPotential: selectedPotential)
         
         
         
@@ -119,11 +122,11 @@ struct ContentView: View {
        
         myDiff.PotentialData = myPotential
         
+        myDiff.plotDataModel = self.plotDataModel
+        
         myDiff.calculateRK4(E: 0.376, xMax: 10.0, xMin: 0.0, xStep: 0.01)
        
-        myDiff.plotDataModel = self.plotDataModel
-       
-        print(myDiff.psi_array)
+        
        
         
         

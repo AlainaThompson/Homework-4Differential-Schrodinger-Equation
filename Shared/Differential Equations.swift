@@ -53,13 +53,12 @@ class DiffEq: NSObject,ObservableObject {
  //   var psi_prime_array = [Double]()
     @Published var psi_String = ""
     
-    
+    var lastPsi :[Double] = []
     
     
     @Published var enableButton = true
 
 
-   
 
 
 
@@ -138,20 +137,22 @@ class DiffEq: NSObject,ObservableObject {
             psi_array.append(psi_i)
             psi_prime_array.append(psi_prime)
 
-            
-
-          
+//Last psi for E = 0: psi = 1.349
+//Functional: Last psi(E) versus x? (Would need a lot of E values)
         }
+        lastPsi.append(psi_i)
         makeWaveFunctionPlot()
         return psi_i
         
     }
 
-
-   
-    //How to plot the wavefunction?
+//Normalize WaveFunction: f(c) = 1/b-a*int(wavefunction) from a to b
+// f(c)(b-a) = integral from a to b
+// f(c) = 1
+// (b-a) = (L-x_0) = (10-0)
+// integral = psi*psi*dx
     
-//This method causes fatal error
+    
     func makeWaveFunctionPlot() {
         plotDataModel!.zeroData()
 

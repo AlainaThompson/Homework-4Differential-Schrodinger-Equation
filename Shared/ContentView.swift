@@ -23,7 +23,7 @@ struct ContentView: View {
     @State var potentialTypes = ["Square Well", "Linear Well", "Parabolic Well", "Square+Linear", "Square Barrier", "Triangle Barrier", "Coupled Parabolic Well", "Coupled Square Well + Field", "Harmonic Oscillator", "Kronig Penny", "Variable Kronig Penny", "KP2-a"]
     @State var selectedPotential = "Square Well"
 
-    
+    //How to make an energy picker that is dependent upon results of potentialType?
 
     
     
